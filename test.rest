@@ -1,0 +1,40 @@
+
+POST http://localhost:3000/api/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "sito",
+    "lastName": "bill",
+    "email":"sit@gmail.com",
+    "password": "2345673"
+    
+}
+
+###
+
+POST http://localhost:3000/api/user/deposit HTTP/1.1
+Content-Type: application/json
+
+{
+    "userId":"63e983b4ec00e951178275d9",
+    "paymentMethod": "2345673",
+    "amount": 3000,
+    "proof": "deposited"
+    
+}
+
+###
+
+GET http://localhost:3000/api/user/deposit HTTP/1.1
+Content-Type: application/json
+
+
+###
+
+PUT http://localhost:3000/api/admin/deposit HTTP/1.1
+Content-Type: application/json
+
+{
+    "id" : "63f80b367d7dc2a714194607",
+    "status": "successful"
+}
